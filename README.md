@@ -14,22 +14,22 @@ ReactView -》Action -》Dispatcher -》Store -》ReactView
 
 
 
-一、准备工作
-1、初始化
- npm init
-2、安装react
- npm install react react-dom --save
-3、安装转码工具
- npm install browserify babelify babel-cli babel-preset-es2015 babel-preset-react --save-dev
-4、在项目根目录下创建目录src源文件
-5、打开package.json，在scripts中添加以下转码命令
- "compile":"babel --presets react,es2015 src -d dest",
-6、在src目录下新建Test.js文件，测试下环境
- 执行命令 npm run compile
+一、准备工作<br/>
+1、初始化<br/>
+ npm init<br/>
+2、安装react<br/>
+ npm install react react-dom --save<br/>
+3、安装转码工具<br/>
+ npm install browserify babelify babel-cli babel-preset-es2015 babel-preset-react --save-dev<br/>
+4、在项目根目录下创建目录src源文件<br/>
+5、打开package.json，在scripts中添加以下转码命令<br/>
+ "compile":"babel --presets react,es2015 src -d dest",<br/>
+6、在src目录下新建Test.js文件，测试下环境<br/>
+ 执行命令 npm run compile<br/>
 
-7、然后在做浏览器的编译，还是在package.json文件中scripts中加入
-  "browser":"browserify src/Test.js -o build.js -t [ babelify --presets [react es2015] ]",
-  执行命令 npm run browser
+7、然后在做浏览器的编译，还是在package.json文件中scripts中加入<br/>
+  "browser":"browserify src/Test.js -o build.js -t [ babelify --presets [react es2015] ]",<br/>
+  执行命令 npm run browser<br/>
 
 
 
